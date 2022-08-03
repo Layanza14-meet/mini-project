@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">  
+    
+<head></head>
+<style> 
+
+	
+	body {
+
+  background-image: url('static/bg.jpeg');
+  background-size: cover;
+
+	}
+</style>
+<body bgcolor="black">
+	<br>
+	<a href="/signin"><button id="signin">Sign in</button></a>
+	<a href="/signup"><button id="signup">Sign up</button></a>
+	<a href="/"><button id="signin">Home</button></a>
+	<br><br>
+	<center>
+  
+
+	
+	<br><br>
+	
+<h1 id="intro2">Welcome {{username}} to every </h1>
+<p id="hi"><b> we added the best picture that we`ve took</b></p>
+
+</center>
+<br><br><br><br>
+<center>
+<form method="POST" action="/all_photos">
+	<div>
+            <label id="linkit"><b>put your link</b></label>
+            <br><br>
+            <div>
+                <input type="text"  name="link" id="linkk" required>
+            </div>
+        </div>
+        <br><br>
+        <div>
+            <input type="submit" id ="signin"/>
+        </div>
+        </center>
+
+
+
+	</form>
+
+
+
+
+<br><br><br><br>
+<h3 id="best">Best Pictures</h3>
+
+
+
+
+<a href="{{url_for('add_cart')}}"><img src="static/boy.jpeg"  id="1" width="33%"></a>
+
+
+<a href="{{url_for('add_cart')}}"><img src="static/clo.jpeg"  id="2" width="33%"></a>
+    
+<a href="{{url_for('add_cart')}}"><img src="static/hi.jpeg"   id="3" width="33%"> </a>
+
+
+<center><a href="{{url_for('add_cart')}}"> </button></a>
+
+
+
+
+
+<br>
+<a href="{{url_for('add_cart')}}"><img src="static/bea.jpeg" id="4"  width="33%"></a>
+
+
+<a href="{{url_for('add_cart')}}"><img src="static/ocean.jpeg"  id="6"width="33%"></a>
+<a href="{{url_for('add_cart')}}"><img src="static/1.jpeg"   id="3" width="33%" height=630> </a>
+
+<br>
+<a href="{{url_for('add_cart')}}"><img src="static/2.jpeg"   id="3" width="33%" height=650> </a>
+<a href="{{url_for('add_cart')}}"><img src="static/3.jpeg"   id="3" width="33%" height=650> </a>
+<a href="{{url_for('add_cart')}}"><img src="static/hi.jpeg"   id="3" width="33%" height=650> </a>
+<br>
+<a href="{{url_for('add_cart')}}"><img src="static/sham.png"   id="3" width="33%" height=650> </a>
+<a href="{{url_for('add_cart')}}"><img src="static/hunt.png"   id="3" width="33%" height=650> </a>
+<a href="{{url_for('add_cart')}}"><img src="static/right.png"   id="3" width="33%" height=650> </a>
+<br>
+<a href="{{url_for('add_cart')}}"><img src="static/hotal.png"   id="3" width="33%" height=650> </a>
+<a href="{{url_for('add_cart')}}"><img src="static/sky.png"   id="3" width="33%" height=650> </a>
+<a href="{{url_for('add_cart')}}"><img src="static/ramadan.png"   id="3" width="33%" height=650> </a>
+
+
+	</center>
+
+</body>
+</html>

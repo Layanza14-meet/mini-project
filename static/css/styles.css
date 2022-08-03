@@ -1,0 +1,122 @@
+#signin{
+	 background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+	
+}
+#signup{
+	 background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+
+}
+#signup , #signin {
+
+    display:inline-block;
+	/* additional code */
+}
+#email{
+
+
+	color: white;
+}
+#password{
+
+	color: white;
+	font-family:
+}
+#intro{
+
+	font-size: 150px;
+	color: white;
+	font-family: cursive;
+}
+#best{
+	font-size: 110px;
+	color: white;
+	font-family: cursive;
+
+
+
+}
+#intro2{
+	font-size: 93px;
+	color: white;
+	font-family: serif;
+
+
+}
+#hi{
+	font-size:50px ;
+	color: white;
+	font-family: serif;
+}
+#b1{
+	background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 800px;
+
+
+}
+#b2{
+background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 500px;
+  margin-left: 500px;
+
+
+}
+#b3{
+
+background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  margin-left:850px;
+
+
+
+
+}
+#h{
+	color: white;
+  size: 100px;
+  font-family: cursive;
+}
+#linkit{
+  color: white;
+  size: 100px;
+  font-family: serif;
+
+
+
+}

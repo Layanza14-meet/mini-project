@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">  
+    <meta charset="UTF-8">
+    <title>Signup</title>
+</head>
+<body bgcolor="black">
+    <br>
+        <a href="/signin"><button id="signin">Sign in</button></a>
+    
+    <a href="/"><button id="signin">Home</button></a>
+    <center>
+    <form method="post" action="/signup">
+        <!-- Heading -->
+        <h4>
+            Create an account
+        </h4>
+
+        <!-- Subheading -->
+        
+        <!-- Email -->
+        <div>
+            <label id="email">Email address</label>
+            <br><br>
+            <div>
+                <input type="text"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <br><br>
+        <div>
+            <label id="password">Password</label>
+            <br><br>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6">
+            </div>
+        </div>
+        <br><br>
+        <div>
+            <label id="email">fullname</label>
+            <br><br>
+            <div class="input-group">
+                <input type="text"  name="fullname" minlength="6">
+            </div>
+        </div>
+        <br><br>
+        <div>
+            <label id="email">username</label>
+            <br><br>
+            <div class="input-group">
+                <input type="text"  name="username" minlength="6">
+            </div>
+        </div>
+        <br><br>
+        <div>
+            <label id="email">bio</label>
+            <br><br>
+            <div class="input-group">
+                <input type="text"  name="bio" maxlength="280">
+            </div>
+        </div>
+        <br><br>
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+
+    
+    </center>
+</body>
+</html>
