@@ -24,10 +24,18 @@ app=Flask(__name__)
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.config['SECRET_KEY'] = 'super-secret-key'
 
-
 @app.route('/')
+
 def home():
     return render_template("home.html")
+
+
+
+
+
+
+
+
 
 
 @app.route('/signin', methods=['GET', 'POST'])
@@ -63,7 +71,10 @@ def signup():
         try:
             login_session['user'] = auth.create_user_with_email_and_password(email, password)
             user = {"bio":bio,"fullname":fullname,"username":username,"password":password,"email":email}
-            db.child("Users").child(login_session['user']['localId'] ).set(user)
+            db.child("users").child(login_session['user']['localId'] ).set(user)
+
+
+
 
             return redirect(url_for('every'))
 
@@ -76,33 +87,37 @@ def signup():
          if request.method == 'GET':
             return render_template("signup.html")
 
+    
+
 
 
 @app.route('/cart')
 def add_cart():
     return render_template("carth.html")
-
-@app.route('/add_new', methods=['POST'])
-def new():
-    if request.method == 'POST':
-        link = request.form['link']
-        up = {"link":link}
-        db.child("link").child(login_session["user"]["localId"]).update(up)
-        return redirect(url_for("open_link"))
-
-
-
 @app.route('/all_photos', methods=['GET', 'POST'])
 def open_link():
-    link =  db.child("link").child(login_session['user']['localId'] ).get().val()
-    print(link)
-    return render_template("all_photos.html",link=link)
+    if request.method == 'POST':
+        link = request.form['link']
+        return render_template("all_photos.html", link=link)
+        
+
+
+
+        
+
+
+
+
+
+
+
+
 
                 
 
 @app.route('/every')
 def every():
-    username=db.child("Users").child(login_session["user"]["localId"]).get().val()
+    username=db.child("users").child(login_session["user"]["localId"]).get().val()
     print(username)
     return render_template("every.html",username=username['username'])
 
